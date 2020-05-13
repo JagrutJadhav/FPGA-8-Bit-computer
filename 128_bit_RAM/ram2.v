@@ -5,8 +5,6 @@ module ram2
 	input we, clk,re,
 	output [7:0] q
 );
-
-	
 	reg [7:0] ram[15:0];
 	reg [7:0] out;
 	
@@ -18,17 +16,10 @@ module ram2
 	addr_reg <= addr;
 		if (we)
 			ram[addr] <= data;
-		
-		
-		
 		else if (re)
 			out <= ram[addr_reg];
-		else out <= 8'bzzzzzzzz;
-		
-		
-	end
-		
-	
+		else out <= 8'bzzzzzzzz;	
+	end	
 	assign q = out;
 	
 endmodule
