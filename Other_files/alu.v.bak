@@ -1,0 +1,16 @@
+module ALU(
+	 input [7:0] a,b,
+	 input [1:0] sel,
+	 output [7:0] out);
+	 
+endmodule
+
+
+module alumux(
+	input [7:0] b,
+	input [1:0] sel,
+	output [16:0] out);
+	
+	
+	
+endmodule
